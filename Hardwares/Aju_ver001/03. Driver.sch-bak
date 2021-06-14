@@ -1,0 +1,318 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Driver_Motor:DRV8837 U4
+U 1 1 60ADB86D
+P 5300 2400
+F 0 "U4" H 5050 2850 50  0000 C CNN
+F 1 "DRV8837" H 5400 2400 50  0000 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 5300 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8837.pdf" H 5300 2400 50  0001 C CNN
+	1    5300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2400 4000 2400
+Wire Wire Line
+	4900 2500 4000 2500
+Text GLabel 4000 2400 0    50   Input ~ 0
+PWM2
+Text GLabel 4000 2500 0    50   Input ~ 0
+PWM1
+Text GLabel 4000 2300 0    50   Input ~ 0
+D1
+Wire Wire Line
+	4000 2300 4900 2300
+$Comp
+L power:GND #PWR0115
+U 1 1 60ADCAA7
+P 5300 3000
+F 0 "#PWR0115" H 5300 2750 50  0001 C CNN
+F 1 "GND" H 5305 2827 50  0000 C CNN
+F 2 "" H 5300 3000 50  0001 C CNN
+F 3 "" H 5300 3000 50  0001 C CNN
+	1    5300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 2900 5300 2950
+Text Label 6150 2100 0    50   ~ 0
+MOUT_11
+Text Label 6150 2700 0    50   ~ 0
+MOUT_12
+$Comp
+L Driver_Motor:DRV8837 U5
+U 1 1 60ADD7D7
+P 5300 4400
+F 0 "U5" H 5050 4850 50  0000 C CNN
+F 1 "DRV8837" H 5400 4400 50  0000 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 5300 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/drv8837.pdf" H 5300 4400 50  0001 C CNN
+	1    5300 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4400 4000 4400
+Wire Wire Line
+	4900 4500 4000 4500
+Text GLabel 4000 4400 0    50   Input ~ 0
+PWM4
+Text GLabel 4000 4500 0    50   Input ~ 0
+PWM3
+Text GLabel 4000 4300 0    50   Input ~ 0
+D2
+Wire Wire Line
+	4000 4300 4900 4300
+$Comp
+L power:GND #PWR0116
+U 1 1 60ADD82F
+P 5300 5000
+F 0 "#PWR0116" H 5300 4750 50  0001 C CNN
+F 1 "GND" H 5305 4827 50  0000 C CNN
+F 2 "" H 5300 5000 50  0001 C CNN
+F 3 "" H 5300 5000 50  0001 C CNN
+	1    5300 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4900 5300 4950
+Text Label 6150 4100 0    50   ~ 0
+MOUT_21
+Text Label 6150 4700 0    50   ~ 0
+MOUT_22
+Text Notes 3800 1200 0    50   ~ 0
+Motor VM : 0 to 11V
+Text Notes 3800 1300 0    50   ~ 0
+Logic VCC : 1.8 to 7V
+$Comp
+L power:+BATT #PWR0117
+U 1 1 60ADF308
+P 5200 1600
+F 0 "#PWR0117" H 5200 1450 50  0001 C CNN
+F 1 "+BATT" H 5215 1773 50  0000 C CNN
+F 2 "" H 5200 1600 50  0001 C CNN
+F 3 "" H 5200 1600 50  0001 C CNN
+	1    5200 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 60AE0A27
+P 4750 1900
+F 0 "C5" H 4800 1950 39  0000 L CNN
+F 1 "0.1 uF" H 4800 1850 39  0000 L CNN
+F 2 "KiCAD_footprint:C1608" H 4750 1900 50  0001 C CNN
+F 3 "~" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 1600 5200 1700
+Wire Wire Line
+	5200 1700 4750 1700
+Connection ~ 5200 1700
+Wire Wire Line
+	5200 1700 5200 1900
+Wire Wire Line
+	4750 2950 5300 2950
+Connection ~ 5300 2950
+Wire Wire Line
+	5300 2950 5300 3000
+$Comp
+L Device:C_Small C7
+U 1 1 60AE3555
+P 5800 1900
+F 0 "C7" H 5850 1950 39  0000 L CNN
+F 1 "0.1 uF" H 5850 1850 39  0000 L CNN
+F 2 "KiCAD_footprint:C1608" H 5800 1900 50  0001 C CNN
+F 3 "~" H 5800 1900 50  0001 C CNN
+	1    5800 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1800 4750 1700
+Wire Wire Line
+	4750 2000 4750 2950
+Wire Wire Line
+	5400 1600 5400 1700
+Wire Wire Line
+	5400 1700 5300 1700
+Wire Wire Line
+	5300 1700 5300 1900
+Wire Wire Line
+	5400 1700 5800 1700
+Wire Wire Line
+	5800 1700 5800 1800
+Connection ~ 5400 1700
+Wire Wire Line
+	5800 2000 5800 2950
+Wire Wire Line
+	5800 2950 5300 2950
+$Comp
+L power:+BATT #PWR0119
+U 1 1 60AE6588
+P 5200 3600
+F 0 "#PWR0119" H 5200 3450 50  0001 C CNN
+F 1 "+BATT" H 5215 3773 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 60AE6644
+P 4750 3900
+F 0 "C6" H 4800 3950 39  0000 L CNN
+F 1 "0.1 uF" H 4800 3850 39  0000 L CNN
+F 2 "KiCAD_footprint:C1608" H 4750 3900 50  0001 C CNN
+F 3 "~" H 4750 3900 50  0001 C CNN
+	1    4750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3600 5200 3700
+Wire Wire Line
+	5200 3700 4750 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	5200 3700 5200 3900
+$Comp
+L Device:C_Small C8
+U 1 1 60AE6652
+P 5800 3900
+F 0 "C8" H 5850 3950 39  0000 L CNN
+F 1 "0.1 uF" H 5850 3850 39  0000 L CNN
+F 2 "KiCAD_footprint:C1608" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3800 4750 3700
+Wire Wire Line
+	5400 3600 5400 3700
+Wire Wire Line
+	5400 3700 5300 3700
+Wire Wire Line
+	5300 3700 5300 3900
+Wire Wire Line
+	5400 3700 5800 3700
+Wire Wire Line
+	5800 3700 5800 3800
+Connection ~ 5400 3700
+Wire Wire Line
+	4750 4000 4750 4950
+Wire Wire Line
+	4750 4950 5300 4950
+Connection ~ 5300 4950
+Wire Wire Line
+	5300 4950 5300 5000
+Wire Wire Line
+	5800 4000 5800 4950
+Wire Wire Line
+	5800 4950 5300 4950
+Wire Wire Line
+	7000 2100 7000 3150
+Wire Wire Line
+	7000 3150 7400 3150
+Wire Wire Line
+	5700 2100 7000 2100
+Wire Wire Line
+	6900 2700 6900 3250
+Wire Wire Line
+	6900 3250 7400 3250
+Wire Wire Line
+	5700 2700 6900 2700
+Wire Wire Line
+	6900 4100 6900 3350
+Wire Wire Line
+	6900 3350 7400 3350
+Wire Wire Line
+	5700 4100 6900 4100
+Wire Wire Line
+	7000 4700 7000 3450
+Wire Wire Line
+	7000 3450 7400 3450
+Wire Wire Line
+	5700 4700 7000 4700
+$Comp
+L power:+2V5 #PWR03
+U 1 1 60AFB428
+P 5400 1600
+F 0 "#PWR03" H 5400 1450 50  0001 C CNN
+F 1 "+2V5" H 5415 1773 50  0000 C CNN
+F 2 "" H 5400 1600 50  0001 C CNN
+F 3 "" H 5400 1600 50  0001 C CNN
+	1    5400 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V0 #PWR04
+U 1 1 60AFBA17
+P 5400 3600
+F 0 "#PWR04" H 5400 3450 50  0001 C CNN
+F 1 "+3V0" H 5415 3773 50  0000 C CNN
+F 2 "" H 5400 3600 50  0001 C CNN
+F 3 "" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 60AF6626
+P 7400 3150
+F 0 "TP1" V 7400 3350 50  0000 L CNN
+F 1 "MOUT_11" V 7400 3600 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7600 3150 50  0001 C CNN
+F 3 "~" H 7600 3150 50  0001 C CNN
+	1    7400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60AF6BCA
+P 7400 3250
+F 0 "TP2" V 7400 3450 50  0000 L CNN
+F 1 "MOUT_12" V 7400 3700 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7600 3250 50  0001 C CNN
+F 3 "~" H 7600 3250 50  0001 C CNN
+	1    7400 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60AF6D96
+P 7400 3350
+F 0 "TP3" V 7400 3550 50  0000 L CNN
+F 1 "MOUT_21" V 7400 3800 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7600 3350 50  0001 C CNN
+F 3 "~" H 7600 3350 50  0001 C CNN
+	1    7400 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60AF6F3B
+P 7400 3450
+F 0 "TP4" V 7400 3650 50  0000 L CNN
+F 1 "MOUT_22" V 7400 3900 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 7600 3450 50  0001 C CNN
+F 3 "~" H 7600 3450 50  0001 C CNN
+	1    7400 3450
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

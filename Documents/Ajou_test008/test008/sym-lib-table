@@ -1,0 +1,11 @@
+(sym_lib_table
+  (lib (name ATTINY2313A-MU)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/ATTINY2313A-MU.lib)(options "")(descr ""))
+  (lib (name DRV8837DSGR)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/DRV8837DSGR.lib)(options "")(descr ""))
+  (lib (name FTM-103-02-F-DV)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/FTM-103-02-F-DV.lib)(options "")(descr ""))
+  (lib (name 53261-0271)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/53261-0271.lib)(options "")(descr ""))
+  (lib (name C0805C104K5RACTU)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/C0805C104K5RACTU.lib)(options "")(descr ""))
+  (lib (name C0805C106K8PACTU)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/C0805C106K8PACTU.lib)(options "")(descr ""))
+  (lib (name RP110x)(type Legacy)(uri C:/Users/kimch/Desktop/KiCadWork/test008/RP110x.lib)(options "")(descr ""))
+  (lib (name test009-rescue)(type Legacy)(uri ${KIPRJMOD}/test009-rescue.lib)(options "")(descr ""))
+  (lib (name test008-rescue)(type Legacy)(uri ${KIPRJMOD}/test008-rescue.lib)(options "")(descr ""))
+)

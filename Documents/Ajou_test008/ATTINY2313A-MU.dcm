@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ATTINY2313A-MU
+D ATTINY2313A-MU, 8 bit AVR Microcontroller 20MHz 128 B, 2 kB Flash, 128 B RAM, I2C 20-Pin MLF
+K
+F http://www.atmel.com/Images/doc8246.pdf
+$ENDCMP
+#
+#End Doc Library

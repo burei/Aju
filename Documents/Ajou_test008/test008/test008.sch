@@ -1,0 +1,609 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DRV8837DSGR:DRV8837DSGR IC3
+U 1 1 60A2A673
+P 9050 4800
+F 0 "IC3" H 9650 5065 50  0000 C CNN
+F 1 "DRV8837DSGR" H 9650 4974 50  0000 C CNN
+F 2 "SON50P200X200X80-9N" H 10100 4900 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/drv8837" H 10100 4800 50  0001 L CNN
+F 4 "1.8A Low Voltage Brushed DC Motor Driver (PWM Ctrl)" H 10100 4700 50  0001 L CNN "Description"
+F 5 "0.8" H 10100 4600 50  0001 L CNN "Height"
+F 6 "595-DRV8837DSGR" H 10100 4500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8837DSGR/?qs=l6ZoeTYLMwO0pKIJ8222Ww%3D%3D" H 10100 4400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 10100 4300 50  0001 L CNN "Manufacturer_Name"
+F 9 "DRV8837DSGR" H 10100 4200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9050 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 53261-0271:53261-0271 J1
+U 1 1 60A2C375
+P 3300 2500
+F 0 "J1" V 3796 2272 50  0000 R CNN
+F 1 "53261-0271" V 3705 2272 50  0000 R CNN
+F 2 "532610271" H 4050 2600 50  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/532610271_sd.pdf" H 4050 2500 50  0001 L CNN
+F 4 "1.25mm Pitch, PicoBlade PCB Header, Single Row, Right-Angle, Surface Mount, Tin (Sn) Plating, Friction Lock,  Circuits, Tape and Reel" H 4050 2400 50  0001 L CNN "Description"
+F 5 "3.65" H 4050 2300 50  0001 L CNN "Height"
+F 6 "538-53261-0271" H 4050 2200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Molex/53261-0271?qs=%252B72YyncTwW%252B8%252BBjraxGf3A%3D%3D" H 4050 2100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 4050 2000 50  0001 L CNN "Manufacturer_Name"
+F 9 "53261-0271" H 4050 1900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3300 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L FTM-103-02-F-DV:FTM-103-02-F-DV J2
+U 1 1 60A2E8B2
+P 6900 1100
+F 0 "J2" H 7300 1365 50  0000 C CNN
+F 1 "FTM-103-02-F-DV" H 7300 1274 50  0000 C CNN
+F 2 "FTM-103-XX-Y-DV" H 7550 1200 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/FTM-103-02-F-DV.pdf" H 7550 1100 50  0001 L CNN
+F 4 "6 Position, 1.00 mm Surface Mount Micro Low Profile Terminal Strip, Vertical Mount" H 7550 1000 50  0001 L CNN "Description"
+F 5 "" H 7550 900 50  0001 L CNN "Height"
+F 6 "200-FTM10302FDV" H 7550 800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=200-FTM10302FDV" H 7550 700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "SAMTEC" H 7550 600 50  0001 L CNN "Manufacturer_Name"
+F 9 "FTM-103-02-F-DV" H 7550 500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6900 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3150 3000 3000
+Wire Wire Line
+	3000 3000 1350 3000
+Wire Wire Line
+	1350 3000 1350 6950
+Wire Wire Line
+	1350 6950 3200 6950
+Wire Wire Line
+	3200 6950 3200 6750
+Wire Wire Line
+	3200 6950 5250 6950
+Wire Wire Line
+	5250 1200 3400 1200
+Wire Wire Line
+	3400 1200 3400 1600
+Connection ~ 3200 6950
+Wire Wire Line
+	3300 1200 3400 1200
+Connection ~ 3400 1200
+Wire Wire Line
+	3400 2500 5250 2500
+Connection ~ 5250 2500
+Wire Wire Line
+	5250 2500 5250 1800
+Wire Wire Line
+	3200 650  6900 650 
+Wire Wire Line
+	3300 1600 3300 1200
+Wire Wire Line
+	3300 2600 5450 2600
+Wire Wire Line
+	5450 1200 6900 1200
+Connection ~ 3300 2600
+Wire Wire Line
+	3300 2600 3300 2500
+Wire Wire Line
+	5450 2600 5450 1200
+Wire Wire Line
+	3200 650  3200 3150
+Wire Wire Line
+	3300 2600 3300 3150
+$Comp
+L DRV8837DSGR:DRV8837DSGR IC2
+U 1 1 60A29BF4
+P 9050 3200
+F 0 "IC2" H 9650 3465 50  0000 C CNN
+F 1 "DRV8837DSGR" H 9650 3374 50  0000 C CNN
+F 2 "SON50P200X200X80-9N" H 10100 3300 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/drv8837" H 10100 3200 50  0001 L CNN
+F 4 "1.8A Low Voltage Brushed DC Motor Driver (PWM Ctrl)" H 10100 3100 50  0001 L CNN "Description"
+F 5 "0.8" H 10100 3000 50  0001 L CNN "Height"
+F 6 "595-DRV8837DSGR" H 10100 2900 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8837DSGR/?qs=l6ZoeTYLMwO0pKIJ8222Ww%3D%3D" H 10100 2800 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 10100 2700 50  0001 L CNN "Manufacturer_Name"
+F 9 "DRV8837DSGR" H 10100 2600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9050 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1300 5600 1300
+Wire Wire Line
+	5600 1300 5600 2700
+Wire Wire Line
+	5600 2700 3400 2700
+Wire Wire Line
+	3400 2700 3400 3150
+$Comp
+L ATTINY2313A-MU:ATTINY2313A-MU IC1
+U 1 1 60A2B343
+P 1600 4850
+F 0 "IC1" H 4944 4796 50  0000 L CNN
+F 1 "ATTINY2313A-MU" H 4944 4705 50  0000 L CNN
+F 2 "QFN50P400X400X80-21N-D" H 4750 6350 50  0001 L CNN
+F 3 "http://www.atmel.com/Images/doc8246.pdf" H 4750 6250 50  0001 L CNN
+F 4 "ATTINY2313A-MU, 8 bit AVR Microcontroller 20MHz 128 B, 2 kB Flash, 128 B RAM, I2C 20-Pin MLF" H 4750 6150 50  0001 L CNN "Description"
+F 5 "0.8" H 4750 6050 50  0001 L CNN "Height"
+F 6 "556-ATTINY2313A-MU" H 4750 5950 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Microchip-Technology-Atmel/ATTINY2313A-MU?qs=%2Fqzd9s%252BcLd76WaF%252BPNn%252Bkw%3D%3D" H 4750 5850 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Microchip" H 4750 5750 50  0001 L CNN "Manufacturer_Name"
+F 9 "ATTINY2313A-MU" H 4750 5650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1600 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 2800 5750 1500
+Wire Wire Line
+	5750 1500 7700 1500
+Wire Wire Line
+	3500 2800 3500 3150
+Wire Wire Line
+	3500 2800 5750 2800
+Wire Wire Line
+	6900 1100 6900 650 
+Wire Wire Line
+	7700 1500 7700 1300
+Wire Wire Line
+	7700 1200 7850 1200
+Wire Wire Line
+	7850 1200 7850 1650
+Wire Wire Line
+	7850 1650 5900 1650
+Wire Wire Line
+	5900 1650 5900 2950
+Wire Wire Line
+	5900 2950 4900 2950
+Wire Wire Line
+	4900 2950 4900 4850
+Wire Wire Line
+	7700 1100 8000 1100
+Wire Wire Line
+	8000 1100 8000 1800
+Wire Wire Line
+	8000 1800 5250 1800
+Connection ~ 5250 1800
+Wire Wire Line
+	5250 1800 5250 1200
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C5
+U 1 1 60A40A2E
+P 8650 3600
+F 0 "C5" H 8900 3865 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 8900 3774 50  0000 C CNN
+F 2 "CAPC2012X88N" H 9000 3650 50  0001 L CNN
+F 3 "" H 9000 3550 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 9000 3450 50  0001 L CNN "Description"
+F 5 "0.88" H 9000 3350 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 9000 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 9000 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 9000 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 9000 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8650 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C1
+U 1 1 60A41588
+P 6100 4100
+F 0 "C1" H 6350 4365 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 6350 4274 50  0000 C CNN
+F 2 "CAPC2012X88N" H 6450 4150 50  0001 L CNN
+F 3 "" H 6450 4050 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 6450 3950 50  0001 L CNN "Description"
+F 5 "0.88" H 6450 3850 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 6450 3750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 6450 3650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 6450 3550 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 6450 3450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6100 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RP110x:RP110x VR1
+U 1 1 60A44BDF
+P 6750 2500
+F 0 "VR1" H 7050 2115 50  0000 C CNN
+F 1 "RP110x" H 7050 2024 50  0000 C CNN
+F 2 "MyLib:RP110x-DFN1010-4" H 7060 2110 50  0001 C CNN
+F 3 "" H 7060 2110 50  0001 C CNN
+	1    6750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3200 6100 3200
+Connection ~ 5450 2600
+$Comp
+L RP110x:RP110x VR2
+U 1 1 60A46713
+P 6750 4100
+F 0 "VR2" H 7050 3715 50  0000 C CNN
+F 1 "RP110x" H 7050 3624 50  0000 C CNN
+F 2 "MyLib:RP110x-DFN1010-4" H 7060 3710 50  0001 C CNN
+F 3 "" H 7060 3710 50  0001 C CNN
+	1    6750 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3200 5450 2600
+Connection ~ 5450 3200
+Wire Wire Line
+	6650 4800 6100 4800
+Wire Wire Line
+	5450 3200 5450 4800
+Wire Wire Line
+	5250 6950 7850 6950
+Wire Wire Line
+	7850 6950 7850 5700
+Wire Wire Line
+	7850 3300 7450 3300
+Connection ~ 5250 6950
+Wire Wire Line
+	7450 4900 7850 4900
+Connection ~ 7850 4900
+Wire Wire Line
+	7850 4900 7850 4100
+Wire Wire Line
+	6100 4100 7850 4100
+Connection ~ 7850 4100
+Wire Wire Line
+	7850 4100 7850 3300
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C3
+U 1 1 60A5F74E
+P 8200 4100
+F 0 "C3" H 8450 4365 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 8450 4274 50  0000 C CNN
+F 2 "CAPC2012X88N" H 8550 4150 50  0001 L CNN
+F 3 "" H 8550 4050 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 8550 3950 50  0001 L CNN "Description"
+F 5 "0.88" H 8550 3850 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 8550 3750 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 8550 3650 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 8550 3550 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 8550 3450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8200 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3600 8200 3200
+Wire Wire Line
+	8200 3200 7450 3200
+Connection ~ 8200 3200
+Wire Wire Line
+	7850 4100 8200 4100
+Wire Wire Line
+	7450 4800 8200 4800
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C2
+U 1 1 60A6AA59
+P 6100 5700
+F 0 "C2" H 6350 5965 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 6350 5874 50  0000 C CNN
+F 2 "CAPC2012X88N" H 6450 5750 50  0001 L CNN
+F 3 "" H 6450 5650 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 6450 5550 50  0001 L CNN "Description"
+F 5 "0.88" H 6450 5450 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 6450 5350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 6450 5250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 6450 5150 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 6450 5050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6100 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 5700 7850 5700
+Connection ~ 7850 5700
+Wire Wire Line
+	7850 5700 7850 4900
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C4
+U 1 1 60A6D848
+P 8200 5700
+F 0 "C4" H 8450 5965 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 8450 5874 50  0000 C CNN
+F 2 "CAPC2012X88N" H 8550 5750 50  0001 L CNN
+F 3 "" H 8550 5650 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 8550 5550 50  0001 L CNN "Description"
+F 5 "0.88" H 8550 5450 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 8550 5350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 8550 5250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 8550 5150 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 8550 5050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8200 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 5700 8200 5700
+Wire Wire Line
+	8200 5200 8200 4800
+Connection ~ 8200 4800
+Wire Wire Line
+	6100 3200 6100 3600
+Connection ~ 6100 3200
+Wire Wire Line
+	6100 3200 5450 3200
+Connection ~ 6100 4800
+Wire Wire Line
+	6100 4800 5450 4800
+Wire Wire Line
+	6100 4800 6100 5200
+Wire Wire Line
+	5450 2600 10500 2600
+Wire Wire Line
+	10500 2600 10500 3200
+Wire Wire Line
+	10500 4800 10250 4800
+Wire Wire Line
+	10250 3200 10500 3200
+Connection ~ 10500 3200
+Wire Wire Line
+	10500 3200 10500 4650
+Wire Wire Line
+	9650 4000 9050 4000
+Wire Wire Line
+	9050 4000 9050 3500
+Wire Wire Line
+	9650 5600 9050 5600
+Wire Wire Line
+	9050 5600 9050 5100
+Wire Wire Line
+	7850 6950 8650 6950
+Wire Wire Line
+	8650 6950 8650 5600
+Connection ~ 7850 6950
+Wire Wire Line
+	9050 5600 8650 5600
+Wire Wire Line
+	4900 4950 5100 4950
+Wire Wire Line
+	5100 4950 5100 4350
+Wire Wire Line
+	5100 4350 10250 4350
+Wire Wire Line
+	10250 4350 10250 3500
+Wire Wire Line
+	5250 2500 5250 6950
+Wire Wire Line
+	4900 5050 5200 5050
+Wire Wire Line
+	5200 5050 5200 4450
+Wire Wire Line
+	5200 4450 10400 4450
+Wire Wire Line
+	10400 4450 10400 3400
+Wire Wire Line
+	10400 3400 10250 3400
+Wire Wire Line
+	4900 5150 5100 5150
+Wire Wire Line
+	5100 5150 5100 6050
+Wire Wire Line
+	5100 6050 10250 6050
+Wire Wire Line
+	10250 5100 10250 6050
+Wire Wire Line
+	3100 6750 3100 7050
+Wire Wire Line
+	3100 7050 10500 7050
+Wire Wire Line
+	10500 7050 10500 5000
+Wire Wire Line
+	10500 5000 10250 5000
+Wire Wire Line
+	4900 5250 4900 6200
+Wire Wire Line
+	4900 6200 10650 6200
+Wire Wire Line
+	10650 6200 10650 4800
+Wire Wire Line
+	3400 6750 10850 6750
+Wire Wire Line
+	10850 6750 10850 4900
+Wire Wire Line
+	10850 4900 10250 4900
+Wire Wire Line
+	10650 4800 10850 4800
+Wire Wire Line
+	10850 4800 10850 3300
+Wire Wire Line
+	10250 3300 10850 3300
+Wire Wire Line
+	8200 3200 8200 2950
+Wire Wire Line
+	8200 2950 8650 2950
+Wire Wire Line
+	9050 2950 9050 3200
+Wire Wire Line
+	8650 3100 8650 2950
+Wire Wire Line
+	9050 4000 8650 4000
+Connection ~ 9050 4000
+Connection ~ 8650 2950
+Wire Wire Line
+	8650 2950 9050 2950
+Wire Wire Line
+	8650 3600 8650 4000
+Connection ~ 8650 4000
+Connection ~ 8650 5600
+Connection ~ 9050 5600
+Wire Wire Line
+	8650 4000 8650 4650
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C6
+U 1 1 60A7D926
+P 8650 5150
+F 0 "C6" H 8900 5415 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 8900 5324 50  0000 C CNN
+F 2 "CAPC2012X88N" H 9000 5200 50  0001 L CNN
+F 3 "" H 9000 5100 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 9000 5000 50  0001 L CNN "Description"
+F 5 "0.88" H 9000 4900 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 9000 4800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 9000 4700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 9000 4600 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 9000 4500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8650 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4800 8200 4650
+Wire Wire Line
+	8200 4650 8650 4650
+Wire Wire Line
+	9050 4650 9050 4800
+Wire Wire Line
+	8650 5150 8650 5600
+Connection ~ 8650 4650
+Wire Wire Line
+	8650 4650 9050 4650
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C7
+U 1 1 60AD4BBB
+P 11050 3950
+F 0 "C7" H 11300 4215 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 11300 4124 50  0000 C CNN
+F 2 "CAPC2012X88N" H 11400 4000 50  0001 L CNN
+F 3 "" H 11400 3900 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 11400 3800 50  0001 L CNN "Description"
+F 5 "0.88" H 11400 3700 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 11400 3600 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 11400 3500 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 11400 3400 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 11400 3300 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11050 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 3200 11050 3200
+Wire Wire Line
+	11050 3200 11050 3450
+$Comp
+L C0805C104K5RACTU:C0805C104K5RACTU C8
+U 1 1 60ADF8B6
+P 11050 5650
+F 0 "C8" H 11300 5915 50  0000 C CNN
+F 1 "C0805C104K5RACTU" H 11300 5824 50  0000 C CNN
+F 2 "CAPC2012X88N" H 11400 5700 50  0001 L CNN
+F 3 "" H 11400 5600 50  0001 L CNN
+F 4 "0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1" H 11400 5500 50  0001 L CNN "Description"
+F 5 "0.88" H 11400 5400 50  0001 L CNN "Height"
+F 6 "80-C0805C104K5R" H 11400 5300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/KEMET/C0805C104K5RACTU?qs=Pc30aiB8zWUISNb2Qeyxfw%3D%3D" H 11400 5200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Kemet" H 11400 5100 50  0001 L CNN "Manufacturer_Name"
+F 9 "C0805C104K5RACTU" H 11400 5000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    11050 5650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10500 4650 11050 4650
+Wire Wire Line
+	11050 4650 11050 5150
+Connection ~ 10500 4650
+Wire Wire Line
+	10500 4650 10500 4800
+Wire Wire Line
+	8650 6950 11050 6950
+Wire Wire Line
+	11050 6950 11050 5650
+Connection ~ 8650 6950
+Wire Wire Line
+	11050 6950 11200 6950
+Wire Wire Line
+	11200 6950 11200 4100
+Wire Wire Line
+	11200 4100 11050 4100
+Wire Wire Line
+	11050 4100 11050 3950
+Connection ~ 11050 6950
+$Comp
+L Connector:TestPoint TP1
+U 1 1 60AF5639
+P 9400 2450
+F 0 "TP1" H 9458 2568 50  0000 L CNN
+F 1 "TestPoint" H 9458 2477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9600 2450 50  0001 C CNN
+F 3 "~" H 9600 2450 50  0001 C CNN
+	1    9400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 60AF715E
+P 9850 2450
+F 0 "TP2" H 9908 2568 50  0000 L CNN
+F 1 "TestPoint" H 9908 2477 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10050 2450 50  0001 C CNN
+F 3 "~" H 10050 2450 50  0001 C CNN
+	1    9850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60AFAB88
+P 9900 5850
+F 0 "TP4" H 9958 5968 50  0000 L CNN
+F 1 "TestPoint" H 9958 5877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10100 5850 50  0001 C CNN
+F 3 "~" H 10100 5850 50  0001 C CNN
+	1    9900 5850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60AFE6EE
+P 9450 5850
+F 0 "TP3" H 9392 5876 50  0000 R CNN
+F 1 "TestPoint" H 9392 5967 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 9650 5850 50  0001 C CNN
+F 3 "~" H 9650 5850 50  0001 C CNN
+	1    9450 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9050 3300 8950 3300
+Wire Wire Line
+	8950 3300 8950 2750
+Wire Wire Line
+	8950 2750 9850 2750
+Wire Wire Line
+	9850 2750 9850 2450
+Wire Wire Line
+	9050 3400 8800 3400
+Wire Wire Line
+	8800 3400 8800 2650
+Wire Wire Line
+	8800 2650 9400 2650
+Wire Wire Line
+	9400 2650 9400 2450
+Wire Wire Line
+	9050 5000 8900 5000
+Wire Wire Line
+	8900 5000 8900 5700
+Wire Wire Line
+	8900 5700 9900 5700
+Wire Wire Line
+	9900 5700 9900 5850
+Wire Wire Line
+	9050 4900 8800 4900
+Wire Wire Line
+	8800 4900 8800 5850
+Wire Wire Line
+	8800 5850 9450 5850
+$EndSCHEMATC

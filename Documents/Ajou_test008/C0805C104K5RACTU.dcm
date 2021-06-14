@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C0805C104K5RACTU
+D 0805 X7R ceramic capacitor,100nF 50V Kemet 0805 0.1
+K
+F 
+$ENDCMP
+#
+#End Doc Library
